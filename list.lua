@@ -1,4 +1,4 @@
-function isblacklisted(hwid:string)
+function isblacklisted(hwid)
 	local hwidhashes={}
 	for i,hash in next,hwidhashes do
 		if hwid:match("^"..hash) then
