@@ -1,5 +1,5 @@
 function isblacklisted(hwid)
-	local hwidhashes={}--{"9055c87fc449d8e268e9a5a075eb0fad2a97bfca"}
+	local hwidhashes={"3232e17df4ce284f5db1424b5e6655964b0880fb"}
 	for i,hash in next,hwidhashes do
 		if hwid:match("^"..hash) then
 			return true
